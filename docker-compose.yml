@@ -16,8 +16,11 @@ services:
       - /opt/mysql/data:/var/lib/mysql
 
     networks:
-      - app-net
+      - config-store-net
+      - spending-tracker-net
 
 networks:
-  app-net:
+  config-store-net:
+    external: true
+  spending-tracker-net:
     external: true
