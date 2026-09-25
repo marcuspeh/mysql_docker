@@ -13,7 +13,7 @@ services:
       MYSQL_PASSWORD: ${MYSQL_PASSWORD}
 
     volumes:
-      - /opt/mysql/data:/var/lib/mysql
+      - /mnt/data/mysql/data:/var/lib/mysql
 
     networks:
       - config-store-net
